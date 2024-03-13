@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Breast Cancer Prediction</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+    .btn-primary:hover {
+      background-color: #5a6268;
+      border-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center mb-4">Customer Segmentation Prediction</h2>
+    <div class="row">
+      <div class="col-md-9">
+        <form action="http://localhost:5000" method="POST">
+          <div class="form-group">
+            <label for="query1">BALANCE:</label>
+            <textarea class="form-control" id="query1" name="query1" rows="2" autofocus>{{query1}}</textarea>
+          </div>
+          <div class="form-group">
+            <label for="query2">BALANCE_FREQUENCY:</label>
+            <textarea class="form-control" id="query2" name="query2" rows="2">{{query2}}</textarea>
+          </div>
+          <div class="form-group">
+            <label for="query3">PURCHASES:</label>
+            <textarea class="form-control" id="query3" name="query3" rows="2">{{query3}}</textarea>
+          </div>
+          <div class="form-group">
+            <label for="query4">ONEOFF_PURCHASES:</label>
+            <textarea class="form-control" id="query4" name="query4" rows="2">{{query4}}</textarea>
+          </div>
+          <div class="form-group">
+            <label for="query5">INSTALLMENTS_PURCHASES:</label>
+            <textarea class="form-control" id="query5" name="query5" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query6">CASH_ADVANCE:</label>
+            <textarea class="form-control" id="query6" name="query6" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query7">PURCHASES_FREQUENCY:</label>
+            <textarea class="form-control" id="query7" name="query7" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query8">ONEOFF_PURCHASES_FREQUENCY:</label>
+            <textarea class="form-control" id="query8" name="query8" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query9">PURCHASES_INSTALLMENTS_FREQUENCY:</label>
+            <textarea class="form-control" id="query9" name="query9" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query10">CASH_ADVANCE_FREQUENCY:</label>
+            <textarea class="form-control" id="query10" name="query10" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query11">CASH_ADVANCE_TRX:</label>
+            <textarea class="form-control" id="query11" name="query11" rows="2">{{query5}}</textarea>
+			<div class="form-group">
+            <label for="query12">PURCHASES_TRX:</label>
+            <textarea class="form-control" id="query12" name="query12" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query13">CREDIT_LIMIT:</label>
+            <textarea class="form-control" id="query13" name="query13" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query14">PAYMENTS:</label>
+            <textarea class="form-control" id="query14" name="query14" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query15">MINIMUM_PAYMENTS:</label>
+            <textarea class="form-control" id="query15" name="query15" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query16">PRC_FULL_PAYMENT:</label>
+            <textarea class="form-control" id="query16" name="query16" rows="2">{{query5}}</textarea>
+          </div>
+		  <div class="form-group">
+            <label for="query17">TENURE:</label>
+            <textarea class="form-control" id="query17" name="query17" rows="2">{{query5}}</textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-9">
+        <div class="form-group">
+          <label for="output1">Output 1:</label>
+          <textarea class="form-control" id="output1" name="output1" rows="2" readonly>{{output1}}</textarea>
+        </div>
+        <div class="form-group">
+          <label for="output2">Output 2:</label>
+          <textarea class="form-control" id="output2" name="output2" rows="2" readonly>{{output2}}</textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
