@@ -8,6 +8,7 @@ import pickle
 app = Flask(__name__, template_folder = 'templates')
 q = ""
 
+
 @app.route("/")
 def LoadPage():
     return render_template('home.html', query="")
@@ -69,4 +70,4 @@ def customerPrediction():
 
     return render_template ('home.html', output1 = o1,query1 = request.form['query1'],query2 = request.form['query2'],query3 = request.form['query3'],query4 = request.form['query4'],query5 = request.form['query5'],query6 = request.form['query6'],query7 = request.form['query7'],query8 = request.form['query8'],query9 = request.form['query9'],query10 = request.form['query10'],query11 = request.form['query11'],query12 = request.form['query12'],query13 = request.form['query13'],query14 = request.form['query14'],query15 = request.form['query15'],query16 = request.form['query16'],query17 = request.form['query17'])
 
-app.run()
+app.run(port=8000)
